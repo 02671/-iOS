@@ -53,7 +53,7 @@ Sideloadly 官方 FAQ 说明：普通免费 Apple Developer 账号侧载的 App 
 
 ## 系统要求
 
-当前工程最低支持 iOS 17。若 iPhone 系统低于 iOS 17，安装会失败，需要先升级 iOS 或调整项目最低版本并重新构建。
+当前工程最低支持 iOS 16。若 iPhone 系统低于 iOS 16，安装会失败，需要先升级 iOS 或调整项目最低版本并重新构建。
 
 ## 安装遇到问题时
 

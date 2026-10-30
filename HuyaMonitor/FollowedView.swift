@@ -72,7 +72,7 @@ struct FollowedView: View {
         }
         .navigationTitle("关注主播")
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     showingAddStreamer = true
                 } label: {

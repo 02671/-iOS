@@ -12,7 +12,7 @@
 4. 解压后获得 `HuyaMonitor-unsigned.ipa`。
 5. 按照 [Windows 中文安装说明](docs/WINDOWS_INSTALL_GUIDE.md)，使用 Windows 侧载工具签名并安装到自己的 iPhone。
 
-**注意：IPA 是未签名包，不能直接安装。** 必须用自己的 Apple Account 重新签名。免费账号侧载通常只有 7 天有效期，具体说明见安装指南。当前最低支持 iOS 17。
+**注意：IPA 是未签名包，不能直接安装。** 必须用自己的 Apple Account 重新签名。免费账号侧载通常只有 7 天有效期，具体说明见安装指南。当前最低支持 iOS 16。
 
 ## 当前已完成
 
