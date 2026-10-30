@@ -1,0 +1,62 @@
+name: Build iPhone IPA for Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "HuyaMonitor/**"
+      - "HuyaMonitor.xcodeproj/**"
+      - ".github/workflows/ios-ipa.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-ipa:
+    runs-on: macos-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build iPhone app (unsigned)
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project HuyaMonitor.xcodeproj \
+            -scheme HuyaMonitor \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$PWD/build/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package unsigned IPA
+        run: |
+          set -euo pipefail
+          APP_PATH="$PWD/build/DerivedData/Build/Products/Release-iphoneos/HuyaMonitor.app"
+          test -d "$APP_PATH"
+          mkdir -p "$PWD/dist/Payload"
+          /usr/bin/ditto "$APP_PATH" "$PWD/dist/Payload/HuyaMonitor.app"
+          /usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$PWD/dist/Payload/HuyaMonitor.app/Info.plist"
+          cd "$PWD/dist"
+          /usr/bin/zip -qry "$GITHUB_WORKSPACE/HuyaMonitor-unsigned.ipa" Payload
+          cd "$GITHUB_WORKSPACE"
+          shasum -a 256 HuyaMonitor-unsigned.ipa | tee HuyaMonitor-unsigned.ipa.sha256
+
+      - name: Upload iPhone package
+        uses: actions/upload-artifact@v4
+        with:
+          name: huya-monitor-unsigned-ipa
+          path: |
+            HuyaMonitor-unsigned.ipa
+            HuyaMonitor-unsigned.ipa.sha256
+            docs/WINDOWS_INSTALL_GUIDE.md
+          if-no-files-found: error
+          retention-days: 30
