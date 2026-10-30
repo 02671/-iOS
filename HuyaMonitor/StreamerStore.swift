@@ -17,7 +17,8 @@ final class StreamerStore: ObservableObject {
         if let data = UserDefaults.standard.data(forKey: storageKey),
            let saved = try? JSONDecoder().decode([Streamer].self, from: data) {
             streamers = saved
-            selectedStreamerID = saved.first?.id
+            let savedSelection = UserDefaults.standard.string(forKey: storageKey + ".selected").flatMap { UUID(uuidString: $0) }
+            selectedStreamerID = saved.first(where: { $0.id == savedSelection })?.id ?? saved.first?.id
         } else {
             streamers = []
             selectedStreamerID = nil
