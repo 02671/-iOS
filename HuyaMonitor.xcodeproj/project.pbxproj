@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* HuyaMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000001 /* HuyaMonitorApp.swift */; };
+		A00000000000000000000002 /* Streamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000002 /* Streamer.swift */; };
+		A00000000000000000000003 /* StreamerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000003 /* StreamerStore.swift */; };
+		A00000000000000000000004 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000004 /* NotificationManager.swift */; };
+		A00000000000000000000005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000005 /* ContentView.swift */; };
+		A00000000000000000000006 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000006 /* MonitorView.swift */; };
+		A00000000000000000000007 /* FollowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000007 /* FollowedView.swift */; };
+		A00000000000000000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000008 /* SettingsView.swift */; };
+		A00000000000000000000009 /* AddStreamerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000009 /* AddStreamerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00000000000000000000001 /* HuyaMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuyaMonitorApp.swift; sourceTree = "<group>"; };
+		B00000000000000000000002 /* Streamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
+		B00000000000000000000003 /* StreamerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerStore.swift; sourceTree = "<group>"; };
+		B00000000000000000000004 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B00000000000000000000005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B00000000000000000000006 /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorView.swift; sourceTree = "<group>"; };
+		B00000000000000000000007 /* FollowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedView.swift; sourceTree = "<group>"; };
+		B00000000000000000000008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B00000000000000000000009 /* AddStreamerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStreamerView.swift; sourceTree = "<group>"; };
+		C00000000000000000000001 /* HuyaMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuyaMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				E00000000000000000000002 /* HuyaMonitor */,
+				E00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E00000000000000000000002 /* HuyaMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000001 /* HuyaMonitorApp.swift */,
+				B00000000000000000000002 /* Streamer.swift */,
+				B00000000000000000000003 /* StreamerStore.swift */,
+				B00000000000000000000004 /* NotificationManager.swift */,
+				B00000000000000000000005 /* ContentView.swift */,
+				B00000000000000000000006 /* MonitorView.swift */,
+				B00000000000000000000007 /* FollowedView.swift */,
+				B00000000000000000000008 /* SettingsView.swift */,
+				B00000000000000000000009 /* AddStreamerView.swift */,
+			);
+			path = HuyaMonitor;
+			sourceTree = "<group>";
+		};
+		E00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (C00000000000000000000001 /* HuyaMonitor.app */,);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F00000000000000000000001 /* HuyaMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00000000000000000000004 /* Build configuration list for PBXNativeTarget "HuyaMonitor" */;
+			buildPhases = (
+				D00000000000000000000002 /* Sources */,
+				D00000000000000000000001 /* Frameworks */,
+				D00000000000000000000003 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = HuyaMonitor;
+			productName = HuyaMonitor;
+			productReference = C00000000000000000000001 /* HuyaMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		110000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F00000000000000000000001 = {CreatedOnToolsVersion = 16.0; };
+				};
+			};
+			buildConfigurationList = 110000000000000000000004 /* Build configuration list for PBXProject "HuyaMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (zh_CN, en, Base);
+			mainGroup = E00000000000000000000001;
+			productRefGroup = E00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F00000000000000000000001 /* HuyaMonitor */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000001 /* HuyaMonitorApp.swift in Sources */,
+				A00000000000000000000002 /* Streamer.swift in Sources */,
+				A00000000000000000000003 /* StreamerStore.swift in Sources */,
+				A00000000000000000000004 /* NotificationManager.swift in Sources */,
+				A00000000000000000000005 /* ContentView.swift in Sources */,
+				A00000000000000000000006 /* MonitorView.swift in Sources */,
+				A00000000000000000000007 /* FollowedView.swift in Sources */,
+				A00000000000000000000008 /* SettingsView.swift in Sources */,
+				A00000000000000000000009 /* AddStreamerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		220000000000000000000001 /* Project Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		220000000000000000000002 /* Project Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		220000000000000000000003 /* Target Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "虎牙监控";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.huyamonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220000000000000000000004 /* Target Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "虎牙监控";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.huyamonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		110000000000000000000002 /* Build configuration list for PBXProject "HuyaMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000000000000000000001 /* Project Debug */,
+				220000000000000000000002 /* Project Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110000000000000000000003 /* Build configuration list for PBXNativeTarget "HuyaMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000000000000000000003 /* Target Debug */,
+				220000000000000000000004 /* Target Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 110000000000000000000001 /* Project object */;
+}
