@@ -11,6 +11,13 @@
 - 通知权限申请和本机本地通知测试。
 - 未接入的数据源明确标为未接入。
 
+## Windows-only 使用方式（不需要本地 Mac）
+
+- GitHub Actions 的 `.github/workflows/ios-ipa.yml` 在云端 macOS/Xcode 环境生成 iPhone arm64 未签名 IPA。
+- 用户从 Actions 的 Artifacts 下载 IPA，再在 Windows 上通过侧载工具使用自己的 Apple Account 签名安装。
+- 此方式解决“没有 Mac 怎么构建和初次安装”的问题，但免费签名会过期，且远程 APNs 仍需 Push Notifications capability 与服务端 APNs 凭据。
+- 不要将 Apple Account 密码、APNs 私钥、虎牙 Cookie 或令牌放进仓库。
+
 ## 第二阶段：确认虎牙数据接入
 
 虎牙旧公开弹幕 API 页面：
